@@ -30,7 +30,6 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handleAccountsChanged]);
 
-  // px={{ base: 4 }}
   return (
     <Box as="main">
       {account ? (
@@ -47,24 +46,7 @@ export default function Home() {
           </Box>
         </Box>
       ) : (
-        // <Box px={{ base: 2 }}>
-        //   <Box display={{ base: 'block', md: 'none', lg: 'none' }}>ICON</Box>
-        //   <Flex gap={2}>
-        //     <Box
-        //       border="1px solid red"
-        //       display={{ base: 'none', md: 'block', lg: 'block' }}
-        //       w="36%"
-        //     >
-        //       {' '}
-        //       <p onClick={handleConnectAccount}>Check me out here: {account}</p>
-        //     </Box>
-        //     <Box border="1px solid green" w="full">
-        //       Hello
-        //       <CreateProposalForm />
-        //       <DisplayProposals />
-        //     </Box>
-        //   </Flex>
-        // </Box>
+        
         <Flex alignItems="center" justifyContent="center" minH={'100vh'}>
           <Button bg="white" onClick={handleConnectAccount}>
             Login with Metamask
